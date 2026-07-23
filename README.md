@@ -17,7 +17,7 @@ El proyecto utiliza:
 Cada integrante puede clonar la rama main, crear su propia rama, ejecutar el proyecto en su computadora y subir únicamente los archivos que haya modificado o agregado.
 
 1. Estructura esperada
-
+```
 AvtoGC/
 ├── backend/
 │   ├── app/
@@ -40,7 +40,7 @@ AvtoGC/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
-
+```
 2. Requisitos
 
 Cada integrante debe instalar en su computadora:
