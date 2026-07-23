@@ -1,21 +1,21 @@
-Trabajo del área de diseño
+```Trabajo del área de diseño```
 
 Primero revisar el README para ver que deben instalar para levantar el BACKEND y FRONTEND
 
-Comandos (el backend y frontend se hacen en terminales separados)
+    -Comandos (el backend y frontend se hacen en terminales separados)
 
 *INICIAR BACKEND*
 
 .\backend\.venv\Scripts\Activate.ps1
 python -m uvicorn app.main:app --reload --port 8000 --app-dir .\backend
 
-La terminal debe permanecer abierta.
+        -La terminal debe permanecer abierta.
 
 EJEMPLO:
 PS C:\Users\sagea\Desktop\Proyecto de Google calendar\AvtoGC> .\backend\.venv\Scripts\Activate.ps1
 (.venv) PS C:\Users\sagea\Desktop\Proyecto de Google calendar\AvtoGC> python -m uvicorn app.main:app --reload --port 8000 --app-dir .\backend
 
-funciona bien cuando sale la siguiente respuesta:
+    -funciona bien cuando sale la siguiente respuesta:
 
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
@@ -34,7 +34,7 @@ Abrir:
 
 http://localhost:5173
 
-La terminal debe permanecer abierta.
+        -La terminal debe permanecer abierta.
 
 
 
@@ -99,15 +99,15 @@ compare: design/nombre-del-cambio
 
 El Pull Request debe explicar:
 
-Qué se modificó.
+    -Qué se modificó.
 
-Qué pantallas se afectaron.
+    -Qué pantallas se afectaron.
 
-Cómo se probó.
+    -Cómo se probó.
 
 Capturas antes y después, cuando sea un cambio visual.
 
-No hacer push directo a main.
+**No hacer push directo a main.**
 
 5. Mantener la rama actualizada
 
@@ -156,7 +156,7 @@ Agregar la dependencia y su versión a requirements.txt.
 Subir únicamente:
 
 git add requirements.txt
-git add backend/app/ARCHIVO_MODIFICADO.py
+git add backend/app/ARCHIVO_MODIFICADO.py (si es que es necesario sino solo diseño UX en la carpeta Frontend)
 git commit -m "build: agregar dependencia nombre-del-paquete"
 git push
 

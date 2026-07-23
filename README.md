@@ -45,22 +45,18 @@ AvtoGC/
 
 Cada integrante debe instalar en su computadora:
 
-Git.
+    -Git.
+    -Python 3.12 de 64 bits.
+    -Node.js LTS.
+    -npm.
+    -Visual Studio Code.
+    -Comprobar las versiones:
 
-Python 3.12 de 64 bits.
-
-Node.js LTS.
-
-npm.
-
-Visual Studio Code.
-
-Comprobar las versiones:
-
-git --version
-py -3.12 --version
-node --version
-npm --version
+COMANDOS PARA VERIFICAR 
+-git --version
+-py -3.12 --version
+-node --version
+-npm --version
 
 El backend debe ejecutarse con Python 3.12.
 
@@ -73,7 +69,7 @@ git switch main
 git pull origin main
 git status
 
-Resultado esperado:
+-Resultado esperado:
 
 On branch main
 Your branch is up to date with 'origin/main'.
@@ -94,7 +90,7 @@ git switch -c design/dashboard-responsive
 git switch -c feat/listado-tareas
 git switch -c fix/error-fechas
 
-Comprobar la rama activa:
+-Comprobar la rama activa:
 
 git branch --show-current
 
@@ -167,7 +163,7 @@ Dependencias y archivos locales
 10. Qué no se sube
 
 No se suben:
-
+```
 backend/.venv/
 frontend/node_modules/
 frontend/dist/
@@ -179,6 +175,7 @@ token.json
 *.db
 *.sqlite
 *.sqlite3
+```
 
 Estas carpetas y archivos se generan o configuran localmente.
 
@@ -193,16 +190,12 @@ código fuente modificado o agregado
 
 Sobre package-lock.json
 
-package-lock.json no contiene todas las dependencias instaladas. Solo registra las versiones exactas que npm debe instalar.
+-package-lock.json no contiene todas las dependencias instaladas. Solo registra las versiones exactas que npm debe instalar.
 
 Debe permanecer en GitHub para que todos obtengan versiones compatibles.
 
 Solo se modifica cuando:
-
-Se agrega o elimina una dependencia.
-
-Se actualiza una dependencia.
-
-Se regenera porque contenía una URL incorrecta.
-
-No debe agregarse a .gitignore.
+    -Se agrega o elimina una dependencia.
+    -Se actualiza una dependencia.
+    -Se regenera porque contenía una URL incorrecta.
+    -No debe agregarse a .gitignore.
